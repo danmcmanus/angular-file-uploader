@@ -78,10 +78,10 @@ export class AngularFileUploaderComponent implements OnInit, OnChanges {
         }
       }
 
-      //console.log("config: ", this.config);
-      //console.log(this.config["maxSize"]);
-      //console.log(this.headers);
-      //console.log("rst: ", rst);
+      console.log("config: ", this.config);
+      console.log(this.config["maxSize"]);
+      console.log(this.headers);
+      console.log("rst: ", rst);
     }
 
     if (rst["resetUpload"]) {
@@ -131,7 +131,7 @@ export class AngularFileUploaderComponent implements OnInit, OnChanges {
       file = event.target.files || event.srcElement.files;
       //console.log("type: change");
     }
-    //console.log(file);
+    console.log(file);
     let currentFileExt: any;
     let ext: any;
     let frmtAllowed: boolean;
@@ -193,8 +193,8 @@ export class AngularFileUploaderComponent implements OnInit, OnChanges {
   }
 
   uploadFiles() {
-    //console.log(this.selectedFiles);
-
+    console.log(this.selectedFiles);
+    debugger;
     let i: any;
     this.progressBarShow = true;
     this.uploadClick = false;
